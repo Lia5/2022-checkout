@@ -25,14 +25,7 @@ body {
 	line-height: 24px;
 	min-width: 320px;
 	position: relative;
-	overflow-x: hidden;
-	@include media-md {
-		
-	}
-	@include media-xl {
-		
-	}
-	
+	overflow-x: hidden;	
 }
 
 b, strong {
@@ -58,7 +51,7 @@ b, strong {
 		// max-width: 1232px;
 	}
 	@include media-xl {
-		// max-w     idth: 1232px;
+		// max-width: 1232px;
 	}
 }
 .main {

@@ -25,6 +25,12 @@
             position: relative;
             margin-top: 13px;
             width: fit-content;
+    	    transition: ease-out 120ms;
+        }
+        &:hover {
+            @include media-lg {
+                opacity: 0.8;
+            }
         }
     }
     &__title {

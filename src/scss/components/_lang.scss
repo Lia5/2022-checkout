@@ -52,13 +52,14 @@
         padding: 8px;
         font-weight: 500;
         color: #B0B4BE;
-        transition: opacity 0.5s;
+        transition: opacity ease-out 120ms;
         &.active {
             color: #363A43;
+            pointer-events: none;
         }
         &:hover {
             @include media-lg {
-                opacity: 0.8;
+                color: #363A43;
             }
         }
     }
