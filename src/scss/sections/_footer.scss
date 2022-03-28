@@ -12,6 +12,9 @@
         @include media-lg {
             padding-left: 62px;
         }
+        @include media-xl {
+            padding-left: 0;
+        }
     }
     &__logo {
         display: inline-block;
