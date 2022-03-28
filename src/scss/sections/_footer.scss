@@ -1,0 +1,22 @@
+.footer {
+    padding: 32px 0 40px;
+    @include media-lg {
+        padding: 56px 0 24px;
+    }
+    &__dev {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        line-height: 20px;
+        @include media-lg {
+            padding-left: 62px;
+        }
+    }
+    &__logo {
+        display: inline-block;
+        width: 36px;
+        height: 20px;
+        margin-left: 4px;
+    }
+}

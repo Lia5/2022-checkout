@@ -1,0 +1,61 @@
+section.pay
+    .container 
+        .pay__body 
+            .pay__part
+                .pay__title 5 days free
+                .pay__subtitle then 299.99 UAH per 14 days
+                a(href="#").btn.btn--pay 
+                    svg.icon
+                        use(xlink:href="#pay")
+                .pay-card 
+                    .devider-title
+                        span or pay with card
+                    form.form
+                        label.form-line
+                            input.form-line__input(type="text" placeholder="1234 1234 1234 1234")
+                            span.form-line__label Card Number
+                            span.error Error
+                        .form-line__group
+                            label.form-line
+                                input.form-line__input(type="text" placeholder="MM/YY")
+                                span.form-line__label Expiration Date
+                                span.error Error
+                            label.form-line.tooltip
+                                input.form-line__input(type="text" placeholder="•••")
+                                span.form-line__label CVC
+                                span.error Error
+                                .tooltip__icon
+                                    svg.icon
+                                        use(xlink:href="#info")
+                                .tooltip__text Text
+                        button.btn 
+                            .type-general Start Trial
+                            .type-free.active.btn-processing 
+                                .btn-processing__item.btn-processing__item--up Pay 299.99 UAH
+                                .btn-processing__item.btn-processing__item--down 
+                                    span.processing-icon 
+                                        svg(xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewbox='0 0 18 18' fill='none')
+                                            path(fill-rule='evenodd' clip-rule='evenodd' d='M9 2C5.13401 2 2 5.13401 2 9C2 12.866 5.13401 16 9 16C12.866 16 16 12.866 16 9C16 5.13401 12.866 2 9 2ZM0 9C0 4.02944 4.02944 0 9 0C13.9706 0 18 4.02944 18 9C18 13.9706 13.9706 18 9 18C4.02944 18 0 13.9706 0 9Z' fill='white' fill-opacity='0.16')
+                                            path(fill-rule='evenodd' clip-rule='evenodd' d='M8 1C8 0.447715 8.44772 0 9 0C13.9706 0 18 4.02944 18 9C18 9.55229 17.5523 10 17 10C16.4477 10 16 9.55229 16 9C16 5.13401 12.866 2 9 2C8.44772 2 8 1.55228 8 1Z' fill='white')
+                                                animateTransform(attributeType="xml" attributeName="transform" type="rotate" from="0 9 9" to="360 9 9" dur="0.5s" repeatCount="indefinite")
+                                    span Processing payment
+                        .pay-card__text 
+                            | You'll have your 
+                            b Plan Pro during 1 year. 
+                            | After this period of time, your plan will be 
+                            b automatically renewed 
+                            | with its original price without any discounts applied.
+
+            .pay__part.order-info 
+                .order-info__title Order info <= 100 char.
+                .order-info__subtitle Description <= 400 char.
+                hr
+                .order-info__name Lamel Professional Smart Skin Compact Powder
+                .order-info__product Пудра для лица
+                hr
+                .order-info__price.price 
+                    .price__item.type-free
+                        div 5 days free 
+                        .price__item-subtext then 299.99 UAH per 14 days
+                    .price__item.type-general.active  299.99 UAH / 
+                        span.price__item--smaller month

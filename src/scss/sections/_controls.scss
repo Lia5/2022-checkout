@@ -1,0 +1,64 @@
+.controls {
+    padding: 20px 0 16px;
+    @include media-lg {
+        padding: 8px 0 20px;
+    }
+    .container {
+        display: flex;
+        position: relative;
+        @include media-sm {
+            max-width: 100%;
+        }
+        @include media-md {
+            max-width: 100%;
+        }
+        @include media-lg {
+            max-width: 1000px;
+            flex-direction: column;
+            position: static;
+        }
+    }
+    &__wrap {
+        display: flex;
+        flex-grow: 1;
+        @include media-lg {
+            position: relative;
+            margin-top: 13px;
+            width: fit-content;
+        }
+    }
+    &__title {
+        width: calc(100% - 40px);
+        text-align: center;
+        padding: 0 0 0 40px;
+        word-break: break-word;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 32px;
+        color: #363A43;
+        @include media-lg {
+            width: auto;
+            padding: 0;
+            text-align: left;
+        }
+    }
+    &__arrow {
+        display: block;
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
+        left: 16px;
+        width: 40px;
+        height: 40px;
+        @include media-lg {
+            left: -36px;
+        }
+        .icon {
+            width: 25px;
+            @include media-lg {
+                width: 24px;
+            }
+        }
+    }
+}

@@ -1,0 +1,66 @@
+.pay {
+    overflow: hidden;
+    @include media-lg {
+        overflow: visible;
+    }
+    &__body {
+        @include media-lg {
+            display: flex;
+            align-items: flex-start;
+        }
+    }
+    &__part {
+        flex-basis: 0;
+        flex-grow: 1;
+        @include media-lg {
+            width: 50%;
+            flex-basis: initial;
+            flex-grow: initial;
+        }
+        &+.pay__part {
+            @include media-lg {
+                margin-left: 32px;
+            }
+        }
+    }
+    &__title {
+        text-align: center;
+        color: #363A43;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 32px;
+        @include media-lg {
+            font-size: 32px;
+            line-height: 40px;
+            text-align: left;
+        }
+    }
+    &__subtitle {
+        text-align: center;
+        color: #363A43;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 24px;
+        @include media-lg {
+            text-align: left;
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+    &-card {
+        .btn {
+            margin: 4px 0 8px;
+        }
+        &__text {
+            font-size: 12px;
+            line-height: 16px;
+            color: #666C7B;
+            padding: 11px 16px;
+            background: #FFFFFF;
+            border: 1px solid #E4E6EC;
+            box-sizing: border-box;
+            border-radius: 8px;
+        }
+    }
+}
