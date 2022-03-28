@@ -75,16 +75,6 @@ ul,li {
 	padding: 0;
 }
 
-
-.title {
-	position: relative;
-	@include media-lg {
-	}
-}
-.subtitle {
-	@include media-md {
-	}
-}
 .devider-title {
 	text-align: center;
 	position: relative;
